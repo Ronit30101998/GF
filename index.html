@@ -49,10 +49,13 @@
       <p class="p1">You brought me laughter when I only felt pain.</p>
       <span style="color: red !important">❤️</span>
     </div>
-    <audio id="myAudio" src="2.mp3"></audio>
+    <audio id="myAudio" src="audio/2.mp3"></audio>
+
     <script>
-      console.log("Trying to play audio...");
-      document.getElementById("myAudio").play();
+      document.addEventListener("click", function () {
+        console.log("User interacted, playing audio...");
+        document.getElementById("myAudio").play();
+      });
     </script>
     <script src="script.js"></script>
   </body>
